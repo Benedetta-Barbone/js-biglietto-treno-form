@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno form</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
-        <input type="number">
-        <input type="number">
-        <input type="button">
+    <h1>Genera il tuo biglietto </h1>
+    <div class="container">
+        <div>
+            Inserisci i chilometri da percorrere<input type="number" id="chilometri">
+            Inserisci la tua età <input type="number" id="età">
+            <button id="ticket-generator">Genera </button>
+        </div>
+        <div class="prezzo-finale">
+            <p>In base alla tua età, il tuo sconto corrisponde al <span id="percentuale-sconto">0 %</span></p>
+            <p>Il tuo sconto è pari a <span id="importo-sconto">0 €</span></p>
+            <p>Il prezzo finale del tuo biglietto è di <span id="prezzo-scontato">0 €</span></p>    
+        </div>
     </div>
 
     <script src="./js/script.js"></script>
